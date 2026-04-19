@@ -1,11 +1,26 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    <title>My AWS Project</title>
+    <title>My AWS Full Stack Project</title>
 </head>
 <body>
     <h1>CI/CD Working Successfully 🚀</h1>
-    <h2>Auto Deploy Working 🔥</h2>
-    <p>Hosted on AWS + Auto Deploy</p>
+    <h2>Frontend + Backend Connected 🔥</h2>
+
+```
+<button onclick="callAPI()">Call Backend API</button>
+
+<p id="result"></p>
+
+<script>
+    async function callAPI() {
+        const response = await fetch("https://eoq63op9lk.execute-api.ap-southeast-2.amazonaws.com/hello");
+        const data = await response.json();
+        document.getElementById("result").innerText = data.message;
+    }
+</script>
+```
+
 </body>
 </html>
